@@ -1,3 +1,11 @@
+body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  font-family: "DM Sans", sans-serif;
+  color: #ffffff;
+}
 a {
   text-decoration: none;
 }
@@ -24,10 +32,15 @@ img {
 }
 
 .container {
-  widows: 100%;
+  width: 100%;
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 input,
@@ -52,15 +65,16 @@ button {
 /* -----------------------------------Header------------------------------------ */
 
 .header {
-  /* width: 335px; */
   margin-top: 34px;
-  margin-bottom: 40px;
-  position: relative;
+  margin-bottom: 20px;
 }
 
-.logo {
+.logo-link {
+  display: block;
   width: 127px;
   height: 20px;
+}
+.logo {
 }
 .nav {
   display: none;
@@ -178,11 +192,124 @@ button {
 }
 .mob-menu-list-link {
   color: var(--black, #121212);
-  font-size: 14px;
-  font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
 }
+
+/* ------------------------------------------------------------------------------------ */
+
+/* -----------------------------------Hero--------------------------------------------- */
+
+.hero-container {
+  background-color: var(--black-gray);
+  border-radius: 30px;
+  padding: 40px 20px 0;
+}
+.hero-tittle {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1;
+  width: 275px;
+  margin-bottom: 20px;
+}
+
+.hero-tittle span {
+  color: #bea69e;
+  font-style: italic;
+  font-weight: 400;
+}
+.hero-text {
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+.hero-bottom-section {
+  display: flex;
+  width: 253px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-bottom-section-right {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  min-height: 84px;
+}
+.hero-students {
+  position: relative;
+  height: 44px;
+  width: 109px;
+}
+
+.photo-students2 {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 32px;
+}
+.photo-students3 {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 64px;
+}
+
+.photo-students1 {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.hero-link {
+  margin-right: 4px;
+  width: 89px;
+  height: 36px;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.hero-text-reviews {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hero-text-reviews span {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+
+.hero-text-reviews::before {
+  background-image: url(../img/icons.svg#icon-star);
+  background-color: var(--brown);
+  border-radius: 50%;
+}
+/* ------------------------------------------------------------------------------------ */
+
+/* -----------------------------------Aboutus--------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+/* -----------------------------------Courses--------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+/* -----------------------------------Mentors--------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+/* -----------------------------------Singup--------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+/* -----------------------------------Reviews--------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+/* ----------------------------------Footer--------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
 
 /*------------------------------------Media-------------------------------------------- */
 
