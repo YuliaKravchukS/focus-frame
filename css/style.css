@@ -275,6 +275,7 @@ button {
 
 .hero-text-reviews {
   color: rgba(255, 255, 255, 0.5);
+  position: relative;
 }
 
 .hero-text-reviews span {
@@ -287,9 +288,14 @@ button {
 }
 
 .hero-text-reviews::before {
+  content: "";
   background-image: url(../img/icons.svg#icon-star);
+  width: 44px;
+  height: 44px;
   background-color: var(--brown);
   border-radius: 50%;
+  position: absolute;
+  left: -40px;
 }
 /* ------------------------------------------------------------------------------------ */
 
