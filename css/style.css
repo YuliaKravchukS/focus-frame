@@ -343,7 +343,7 @@ button {
 .advertisement {
   min-width: 100%;
   height: 72px;
-  /* overflow: hidden; */
+  overflow: hidden;
   padding: 20px 0;
   border-top: 1px rgba(255, 255, 255, 0.2) solid;
   border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
@@ -387,10 +387,123 @@ button {
 
 /* -----------------------------------AboutUS--------------------------------------------- */
 .aboutus-tittle {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1, 14;
+  margin-bottom: 40px;
 }
+.aboutus-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.aboutus-text {
+  letter-spacing: -0.02em;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 /* ------------------------------------------------------------------------------------ */
 
-/* -----------------------------------Advertisement--------------------------------------------- */
+/* -----------------------------------OurCourses--------------------------------------------- */
+
+.courses {
+}
+
+.courses-tittle {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  margin-bottom: 20px;
+}
+
+.courses-text {
+  margin-bottom: 40px;
+}
+.courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.courses-list-item {
+  padding: 28px;
+  min-height: 398px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+  position: relative;
+}
+
+.courses-list-top {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin-bottom: 28px;
+}
+.courses-list-numb {
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: -0.02em;
+}
+
+.courses-list-link {
+}
+
+.courses-list-tittle {
+  font-size: 28px;
+  font-weight: 500;
+  width: 248px;
+}
+.courses-list-text {
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: -0.02em;
+  position: absolute;
+  bottom: 28px;
+  width: 279px;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* -----------------------------------OurMentors--------------------------------------------- */
+
+.mentors {
+}
+
+.mentors-tittle {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.mentors-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.mentors-list-item {
+  margin: 0 auto;
+}
+.mentors-list-img {
+  margin-bottom: 16px;
+}
+.mentors-list-tittle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+.mentors-list-text {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* -----------------------------------OurMentors--------------------------------------------- */
 
 /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Aboutus--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Courses--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Mentors--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Singup--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Reviews--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* ----------------------------------Footer--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /*------------------------------------Media-------------------------------------------- */
 @media screen and(min-width: 320px) {
