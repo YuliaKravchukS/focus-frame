@@ -64,6 +64,12 @@ button {
 .color-text {
   color: #bea69e;
 }
+.section-tittle {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  margin-bottom: 40px;
+}
 .background {
   padding-top: 20px;
   padding-bottom: 80px;
@@ -387,10 +393,6 @@ button {
 
 /* -----------------------------------AboutUS--------------------------------------------- */
 .aboutus-tittle {
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1, 14;
-  margin-bottom: 40px;
 }
 .aboutus-wrap {
   display: flex;
@@ -412,9 +414,6 @@ button {
 }
 
 .courses-tittle {
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.14;
   margin-bottom: 20px;
 }
 
@@ -470,11 +469,6 @@ button {
 .mentors {
 }
 
-.mentors-tittle {
-  font-size: 28px;
-  font-weight: 500;
-  margin-bottom: 40px;
-}
 .mentors-list {
   display: flex;
   flex-wrap: wrap;
@@ -500,6 +494,10 @@ button {
   line-height: 1.33;
   letter-spacing: -0.02em;
 }
+
+/* ------------------------------------------------------------------------------------ */
+
+/* -----------------------------------SignUp--------------------------------------------- */
 
 /* ------------------------------------------------------------------------------------ */
 

@@ -31,7 +31,7 @@
             </svg>
           </a>
           <div class="group-btn-menu">
-            <a class="header-icon" href="./index.html">
+            <a class="header-icon" href="#signup">
               <img
                 class="header-icon-photoaparat"
                 src="./img/photoaparat1x-min.png"
@@ -158,7 +158,7 @@
     </section>
     <section class="aboutus section" id="aboutus" >
 <div class="container">
-  <h2 class="aboutus-tittle">About <span class="color-text">US</span></h2>
+  <h2 class="section-tittle">About <span class="color-text">US</span></h2>
   <div class="aboutus-wrap">
     <picture>
       <source
@@ -190,13 +190,13 @@
     </section>
     <section class="courses section" id="courses">
       <div class="container">
-        <h2 class="courses-tittle">Our <span class="color-text">Courses</span></h2>
+        <h2 class="courses-tittle  section-tittle">Our <span class="color-text">Courses</span></h2>
         <p class="courses-text">At our photography school, we offer a variety of courses that cover all aspects of this fascinating art. Regardless of your experience or skill level, we have courses to suit your needs and goals.</p>
         <ol class="courses-list">
           <li class="courses-list-item">
            <div class="courses-list-top">
               <p class="courses-list-numb">01</p>
-              <a class="courses-list-link" href="#singup">
+              <a class="courses-list-link" href="#signup">
                 <svg width="32" height="32">
                   <use href="./img/icons.svg#icon-arrow-link"
                   />
@@ -210,7 +210,7 @@
           <li class="courses-list-item">
             <div class="courses-list-top">
               <p class="courses-list-numb">02</p>
-              <a class="courses-list-link" href="#singup">
+              <a class="courses-list-link" href="#signup">
                 <svg width="32" height="32">
                   <use href="./img/icons.svg#icon-arrow-link"
                   />
@@ -224,7 +224,7 @@
           <li class="courses-list-item">
             <div class="courses-list-top">
               <p class="courses-list-numb">03</p>
-              <a class="courses-list-link" href="#singup">
+              <a class="courses-list-link" href="#signup">
                 <svg width="32" height="32">
                   <use href="./img/icons.svg#icon-arrow-link"
                   />
@@ -241,7 +241,7 @@
     </section>
     <section class="mentors" id="mentors">
       <div class="container section">
-        <h2 class="mentors-tittle">Our <span class="color-text">Mentors</span></h2>
+        <h2 class="section-tittle">Our <span class="color-text">Mentors</span></h2>
       <ul class="mentors-list">
         <li class="mentors-list-item">
           <img class="mentors-list-img"
@@ -275,8 +275,24 @@
       </ul>
       </div>
     </section>
-    <section class="singup" id="singup">
-      <div class="container section"></div>
+    <section class="signup" id="signup">
+      <div class="container section">
+        <h2 class="section-tittle">Sign <span class="color-text">Up</span></h2>
+        <p class="singup-text">Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.</p>
+        <form class="form">
+          <div>
+            <input type="text" class="input" name="name" placeholder="Enter your name" pattern="{a-zA-Z}">
+            <span>Use any letter case in Latin</span>
+          </div>
+          <div>
+            <input type="email" class="input" name="email" placeholder="Enter your email">
+            <span>Enter your email (for example jsmith@example.com)</span>
+          </div>
+          <textarea name="mesage" placeholder="Message"></textarea>
+          <button class="form-btn" type="button">Send</button>
+          <p class="form-policy">By clicking on “Send” button, you agree to our Privacy Policy, and allow Promodo to use this information for marketing purposes.</p>
+        </form>
+      </div>
     </section>
       <!-- 
       
