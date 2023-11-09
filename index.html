@@ -280,26 +280,134 @@
         <h2 class="section-tittle">Sign <span class="color-text">Up</span></h2>
         <p class="singup-text">Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.</p>
         <form class="form">
-          <div>
-            <input type="text" class="input" name="name" placeholder="Enter your name" pattern="{a-zA-Z}">
-            <span>Use any letter case in Latin</span>
+          <div class="input-wrap">
+            <input type="text" class="input" name="name" 
+            placeholder="Enter your name" 
+            pattern="[A-Za-z]{1,15}"
+            required>
+             <span class="form__error">Use any letter case in Latin. Max length 15ch.</span>
           </div>
-          <div>
-            <input type="email" class="input" name="email" placeholder="Enter your email">
-            <span>Enter your email (for example jsmith@example.com)</span>
+          <div class="input-wrap">
+            <input type="email" class="input" name="email" 
+            placeholder="Enter your email"
+            required>
+             <span class="form__error">Enter your email (for example jsmith@example.com)</span>
           </div>
-          <textarea name="mesage" placeholder="Message"></textarea>
+          <textarea class="textarea" name="mesage" placeholder="Message"></textarea>
           <button class="form-btn" type="button">Send</button>
-          <p class="form-policy">By clicking on “Send” button, you agree to our Privacy Policy, and allow Promodo to use this information for marketing purposes.</p>
+          <p class="form-policy">By clicking on “Send” button, you agree to our <span>Privacy Policy</span>, and allow Promodo to use this information for marketing purposes.</p>
         </form>
       </div>
     </section>
-      <!-- 
-      
-      
-      
-      <section class="reviews" id="reviews"></section> -->
+     <section class="reviews" id="reviews">
+      <div class="container section">
+       <h2 class="section-tittle">Reviews</h2>
+       <ul class="reviews-list">
+        <li class="reviews-list-item">
+          <div class="reviews-card">
+            <img class="reviews-img" 
+            srcset="./img/review11x-min.png 1x, 
+            ./img/review12x-min.png 2x,"
+            src="./img/review11x-min.png" alt="Photo our student Abraham Baker">
+            <div class="reviews-card-text">
+              <h3 class="reviews-tittle">Abraham Baker</h3>
+              <p class="reviews-tittle-text">Student</p>
+            </div>
+          </div>
+          <p class="reviews-text">I am very pleased that I decided to enroll in photography school. The teachers turned out to be very talented and experienced professionals who share their knowledge and are dedicated to their work. I was able to expand my skills and discover my own style.</p>
+        </li>
+
+         <li class="reviews-list-item">
+          <div class="reviews-card">
+            <img class="reviews-img" 
+            srcset="./img/review21x-min.png 1x, 
+            ./img/review22x-min.png 2x,"
+            src="./img/review21x-min.png" alt="Photo our student Abraham Baker">
+            <div class="reviews-card-text">
+              <h3 class="reviews-tittle">Abraham Baker</h3>
+              <p class="reviews-tittle-text">Student</p>
+            </div>
+          </div>
+          <p class="reviews-text">I am very pleased that I decided to enroll in photography school. The teachers turned out to be very talented and experienced professionals who share their knowledge and are dedicated to their work. I was able to expand my skills and discover my own style.</p>
+
+        </li>
+       
+       </ul>
+      </div>
+     </section>
     </main>
-    <!-- <footer class="footer" id="footer"></footer> -->
+    <footer class="footer" id="footer">
+      <div class="container section">
+        <a class="logo-link" href="./index.html">
+            <svg class="logo" width="127" height="20">
+              <use href="./img/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <address class="address">
+          
+              <a class="address-list-link" href="tel:+380665438912"
+                >UK +38 066 543 8912</a><br />
+                Ukraine, Kyiv
+         
+        </address>
+        <div class="soc-menu">
+          <ul>
+            <li>
+              <a 
+              href="https://www.instagram.com/goitclub/" 
+              target="_blank"
+              rel="no-referrer nooper"
+              >
+              Instagram
+            </a></li>
+            <li>
+              <a 
+              href="https://www.facebook.com/goITclub/ "
+                target="_blank"
+              rel="no-referrer nooper">
+              Facebook
+            </a>
+          </li>
+            <li>
+              <a 
+              href="https://www.youtube.com/c/GoIT"
+                target="_blank"
+              rel="no-referrer nooper">
+              Youtube
+            </a>
+          </li>
+          </ul>
+        </div>
+         <div class="footer-menu">
+                                <nav class="footer-menu-nav">
+                  <ul class="footer-menu-list">
+                    <li class="footer-menu-list-item">
+                      <a class="footer-menu-list-link" href="#aboutus">About us</a>
+                    </li>
+                    <li class="footer-menu-list-item">
+                      <a class="footer-menu-list-link" href="#courses"
+                        >Our courses</a
+                      >
+                    </li>
+                    <li class="footer-menu-list-item">
+                      <a class="footer-menu-list-link" href="#mentors"
+                        >Our mentors</a
+                      >
+                    </li>
+                    <li class="footer-menu-list-item">
+                      <a class="footer-menu-list-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="footer-menu-list-item">
+                      <a class="footer-menu-list-link" href="#footer">Contacts</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <form>
+
+                <button type="submit" class="btn-footer-close">Go</button></form>
+              
+      </div>
+    </footer>
   </body>
 </html>
