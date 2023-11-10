@@ -57,7 +57,7 @@ button {
   color: #ffffff;
   background-color: var(--black, #121212);
   --black-gray: #1d1d1d;
-  --linear-gradient: (180deg, #060707 0%, #1d1d1d 100%);
+  --linear-gradient: 180deg, #060707 0%, #1d1d1d 100%;
   --brown: #bea69e;
   --white: #fff;
 }
@@ -100,7 +100,12 @@ button {
 .nav {
   display: none;
 }
-.nav-list-link {
+.nav-list-link:hover .header-icon-photoaparat {
+  fill: #bea69e;
+}
+
+.header-icon:hover {
+  color: #bea69e;
 }
 .burger-menu-cherbox {
   appearance: none;
@@ -108,14 +113,14 @@ button {
 .burger-menu-btn {
   position: fixed;
   top: -10px;
-  right: center;
+  right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 32px;
   height: 32px;
   background-color: transparent;
-  border-radius: none;
+  border: none;
   position: relative;
   cursor: pointer;
   z-index: 1;
@@ -176,7 +181,7 @@ button {
   width: 218px;
   height: 100vh;
   background-color: var(--brown, #bea69e);
-  background-image: url(../img/mob-menu1x-min.jpg)
+  background-image: url(../img/mob-menu1x-min.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -343,7 +348,7 @@ button {
   border-radius: 50%;
   background-image: url(../img/Circle-min.png);
   background-repeat: no-repeat;
-  background-position: cover;
+  /* background-position: cover; */
   background-size: 44px 44px;
   position: absolute;
   left: -56px;
@@ -582,6 +587,13 @@ input:invalid:not(:placeholder-shown) + .form__error {
   font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: #1d1d1d;
+  color: #bea69e;
 }
 .form-policy {
   color: rgba(255, 255, 255, 0.5);
@@ -608,12 +620,19 @@ input:invalid:not(:placeholder-shown) + .form__error {
   padding: 20px;
   width: 100%;
   flex-shrink: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reviews-list-item:hover,
+.reviews-list-item:focus {
+  box-shadow: inset 0px 0.1em 12px 0.1em rgb(255, 255, 255, 0.2);
+  transform: scale(1.01);
 }
 .reviews-card {
   display: flex;
   gap: 10px;
   margin-bottom: 40px;
 }
+
 .reviews-card-text {
 }
 .reviews-img {
@@ -732,6 +751,13 @@ input:invalid:not(:placeholder-shown) + .form__error {
 .footer-menu-list-item {
 }
 .footer-menu-list-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soc-menu-link:hover,
+.soc-menu-link:focus,
+.footer-menu-list-link:hover,
+.footer-menu-list-link:focus {
+  color: #bea69e;
 }
 .footer-form {
   display: flex;
@@ -778,9 +804,13 @@ input:invalid:not(:placeholder-shown) + .form__error {
   box-shadow: 0.3em 0.3em 0.5em rgb(188, 63, 63);
 }
 
+.footer .input:hover {
+  background-color: #1d1d1d;
+  color: #bea69e;
+}
 /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Aboutus--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Courses--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Mentors--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Singup--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Reviews--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* ----------------------------------Footer--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /*------------------------------------Media-------------------------------------------- */
-@media screen and(min-width: 320px) {
+/* @media screen and(min-width: 320px) {
   .container {
     width: 335px;
   }
-}
+} */

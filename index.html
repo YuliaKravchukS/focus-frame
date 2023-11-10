@@ -20,44 +20,46 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" type="image/svg" href="/img/photo-camera-interface-symbol-button_45010 1 (1).svg"/>
-
+    <link rel="shortcut icon" type="image/svg" href="/img/photo-camera.svg" />
   </head>
   <body>
-    <div class="background">
-      <header class="header container">
-        <div class="header-wrap">
-          <a class="logo-link" href="./index.html">
-            <svg class="logo" width="127" height="20">
-              <use href="./img/icons.svg#icon-logo"></use>
-            </svg>
-          </a>
-          <div class="group-btn-menu">
-            <a class="header-icon" href="#signup">
-              <img
-                class="header-icon-photoaparat"
-                src="./img/photoaparat1x-min.png"
-                alt="photoaparat-icon"
-                width="32"
-                height="32"
-              />
+    <main>
+      <div class="background">
+        <header class="header container">
+          <div class="header-wrap">
+            <a class="logo-link" href="./index.html">
+              <svg class="logo" width="127" height="20">
+                <use href="./img/icons.svg#icon-logo"></use>
+              </svg>
             </a>
-            <div class="burger-menu">
-              <input
-                class="burger-menu-cherbox"
-                id="menu__toggle"
-                type="checkbox"
-              />
-              <label class="burger-menu-btn" for="menu__toggle">
-                <span class="burger-menu-icon"></span>
-              </label>
-              <!-- <div class="wrap-mob-menu"> -->
-                <div class="mob-menu is-close">
+            <div class="group-btn-menu">
+              <a class="header-icon" href="#signup">
+                <img
+                  class="header-icon-photoaparat"
+                  src="./img/photoaparat1x-min.png"
+                  alt="photoaparat-icon"
+                  width="32"
+                  height="32"
+                />
+              </a>
+              <div class="burger-menu">
+                <input
+                  class="burger-menu-cherbox"
+                  id="menu__toggle"
+                  type="checkbox"
+                />
+                <label class="burger-menu-btn" for="menu__toggle">
+                  <span class="burger-menu-icon"></span>
+                </label>
+                <!-- <div class="wrap-mob-menu"> -->
+                <div class="mob-menu">
                   <button type="button" class="btn-mob-close">X</button>
                   <nav class="mob-menu-nav">
                     <ul class="mob-menu-list">
                       <li class="mob-menu-list-item">
-                        <a class="mob-menu-list-link" href="#aboutus">About us</a>
+                        <a class="mob-menu-list-link" href="#aboutus"
+                          >About us</a
+                        >
                       </li>
                       <li class="mob-menu-list-item">
                         <a class="mob-menu-list-link" href="#courses"
@@ -70,43 +72,48 @@
                         >
                       </li>
                       <li class="mob-menu-list-item">
-                        <a class="mob-menu-list-link" href="#reviews">Reviews</a>
+                        <a class="mob-menu-list-link" href="#reviews"
+                          >Reviews</a
+                        >
                       </li>
                       <li class="mob-menu-list-item">
-                        <a class="mob-menu-list-link" href="#footer">Contacts</a>
+                        <a class="mob-menu-list-link" href="#footer"
+                          >Contacts</a
+                        >
                       </li>
                     </ul>
                   </nav>
                 </div>
-              <!-- </div> -->
+                <!-- </div> -->
+              </div>
             </div>
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-list-item">
+                  <a class="nav-list-link" href="#aboutus">About us</a>
+                </li>
+                <li class="nav-list-item">
+                  <a class="nav-list-link" href="#courses">Our courses</a>
+                </li>
+                <li class="nav-list-item">
+                  <a class="nav-list-link" href="#mentors">Our mentors</a>
+                </li>
+                <li class="nav-list-item">
+                  <a class="nav-list-link" href="#reviews">Reviews</a>
+                </li>
+                <li class="nav-list-item">
+                  <a class="nav-list-link" href="#footer">Contacts</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-list-item">
-                <a class="nav-list-link" href="#aboutus">About us</a>
-              </li>
-              <li class="nav-list-item">
-                <a class="nav-list-link" href="#courses">Our courses</a>
-              </li>
-              <li class="nav-list-item">
-                <a class="nav-list-link" href="#mentors">Our mentors</a>
-              </li>
-              <li class="nav-list-item">
-                <a class="nav-list-link" href="#reviews">Reviews</a>
-              </li>
-              <li class="nav-list-item">
-                <a class="nav-list-link" href="#footer">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <main>
+        </header>
+
         <section class="hero container">
           <div class="hero-container">
             <h1 class="hero-tittle">
-              Discover the magic of <span class="color-text">photography</span> in our school
+              Discover the magic of
+              <span class="color-text">photography</span> in our school
             </h1>
             <p class="hero-text">
               Our photography school offers an unforgettable journey, where you
@@ -155,279 +162,394 @@
             </div>
           </div>
         </section>
-    </div>
-    <section class="advertisement">
-      <h2 class="advertisement-tittle">Master <span class="color-text">your photography</span> skills with us!</h2>
-      <h2 class="advertisement-tittle">Master <span class="color-text">your photography</span> skills with us!</h2>
-    </section>
-    <section class="aboutus section" id="aboutus" >
-<div class="container">
-  <h2 class="section-tittle">About <span class="color-text">US</span></h2>
-  <div class="aboutus-wrap">
-    <picture>
-      <source
-      srcset="./img/desk-aboutus1x-min.png 1x, 
-      ./img/desk-aboutus2x-min.png 2x,"
-      
-      media="(min-width: 1280px)"
-      />
-        <source
-      srcset="./img/tab-aboutus1x-min.png 1x, 
-      ./img/tab-aboutus2x-min.png 2x,"
-      
-      media="(min-width: 768px)"
-      />
-        <source
-      srcset="./img/mob-aboutus1x-min.png 1x, 
-      ./img/mob-aboutus2x-min.png 2x,"
-      
-      media="(max-width: 767px)"
-      />
-      <img src="./img/mob-aboutus1x-min.png" alt="Photoaparat">
-    </picture>
-   <div class="aboutus-text">
-      <p>Our photography school is designed to teach you everything you need to know about this magical art. Regardless of your experience or skill level, we offer a wide range of courses to suit your needs and interests. Our teaching team consists of experienced photographers who have many years of experience in this field. They strive not only to share their knowledge, but also to inspire you to develop and express your unique creativity.</p>
-      <p>Our courses cover a wide range of topics, from the basics of photography and equipment use to professional image processing and creating impressive compositions. You will have the opportunity to learn the technical aspects of photography, discover your own style and develop your own visual language.</p>
-   </div>
-  </div>
-</div>
-    </section>
-    <section class="courses section" id="courses">
-      <div class="container">
-        <h2 class="courses-tittle  section-tittle">Our <span class="color-text">Courses</span></h2>
-        <p class="courses-text">At our photography school, we offer a variety of courses that cover all aspects of this fascinating art. Regardless of your experience or skill level, we have courses to suit your needs and goals.</p>
-        <ol class="courses-list">
-          <li class="courses-list-item">
-           <div class="courses-list-top">
-              <p class="courses-list-numb">01</p>
-              <a class="courses-list-link" href="#signup">
-                <svg width="32" height="32">
-                  <use href="./img/icons.svg#icon-arrow-link"
-                  />
-                </svg>
-            </a>
-            </div>
-            <h3 class="courses-list-tittle">Basics of photography</h3>
-            <p class="courses-list-text">During this course, you will be able to familiarize yourself with different types of cameras, learn the basics of composition.</p>
-            
-          </li>
-          <li class="courses-list-item">
-            <div class="courses-list-top">
-              <p class="courses-list-numb">02</p>
-              <a class="courses-list-link" href="#signup">
-                <svg width="32" height="32">
-                  <use href="./img/icons.svg#icon-arrow-link"
-                  />
-                </svg>
-            </a>
-            </div>
-            <h3 class="courses-list-tittle">Landscape photography</h3>
-            <p class="courses-list-text">In this course, you'll learn how to choose the right angles, frame landscapes, and create depth and perspective in your images.</p>
-            
-          </li>
-          <li class="courses-list-item">
-            <div class="courses-list-top">
-              <p class="courses-list-numb">03</p>
-              <a class="courses-list-link" href="#signup">
-                <svg width="32" height="32">
-                  <use href="./img/icons.svg#icon-arrow-link"
-                  />
-                </svg>
-            </a>
-            </div>
-            <h3 class="courses-list-tittle">Portrait photography</h3>
-            <p class="courses-list-text">During this course, you will learn to choose the right lighting, reproduce the mood and expressions on the faces of the models.</p>
-            
-          </li>
-        
-        </ol>
       </div>
-    </section>
-    <section class="mentors" id="mentors">
-      <div class="container section">
-        <h2 class="section-tittle">Our <span class="color-text">Mentors</span></h2>
-      <ul class="mentors-list">
-        <li class="mentors-list-item">
-          <img class="mentors-list-img"
-          srcset="./img/mob-mentor11x-min.png 1x, 
-          ./img/mob-mentor12x-min.png 2x"
-          src="./img/mob-mentor11x-min.png" alt="Mentor Emilia Smith">
-          <h3 class="mentors-list-tittle">Emilia Smith</h3>
-          <p class="mentors-list-text"> 1.5 years of experience</p>
-        </li>
-        <li class="mentors-list-item">
-          <img class="mentors-list-img" srcset="./img/mob-mentor21x-min.png 1x, 
-          ./img/mob-mentor22x-min.png 2x"
-          src="./img/mob-mentor21x-min.png" alt="Mentor Alex Lebedev">
-          <h3 class="mentors-list-tittle">Alex Lebedev</h3>
-          <p class="mentors-list-text"> 3.5 years of experience</p>
-        </li>
-        <li class="mentors-list-item">
-          <img class="mentors-list-img" srcset="./img/mob-mentor31x-min.png 1x, 
-          ./img/mob-mentor32x-min.png 2x"
-          src="./img/mob-mentor31x-min.png" alt="Mentor Mia Dubrovska">
-          <h3 class="mentors-list-tittle">Mia Dubrovska</h3>
-          <p class="mentors-list-text"> 2.0 years of experience</p>
-        </li>
-        <li class="mentors-list-item">
-         <img class="mentors-list-img" srcset="./img/mob-mentor41x-min.png 1x, 
-          ./img/mob-mentor42x-min.png 2x"
-          src="./img/mob-mentor41x-min.png" alt="Mentor Eliot Kovalev">
-          <h3 class="mentors-list-tittle">Eliot Kovalev</h3>
-          <p class="mentors-list-text"> 4.0 years of experience</p>
-        </li>
-      </ul>
-      </div>
-    </section>
-    <section class="signup" id="signup">
-      <div class="container section">
-        <h2 class="section-tittle">Sign <span class="color-text">Up</span></h2>
-        <p class="singup-text">Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.</p>
-        <form class="form">
-          <div class="input-wrap">
-            <input type="text" class="input" name="name" 
-            placeholder="Enter your name" 
-            pattern="[A-Za-z]{1,15}"
-            required>
-             <span class="form__error">Use any letter case in Latin. Max length 15ch.</span>
-          </div>
-          <div class="input-wrap">
-            <input type="email" class="input" name="email" 
-            placeholder="Enter your email"
-            required>
-             <span class="form__error">Enter your email (for example jsmith@example.com)</span>
-          </div>
-          <textarea class="textarea" name="mesage" placeholder="Message"></textarea>
-          <button class="form-btn" type="button">Send</button>
-          <p class="form-policy">By clicking on “Send” button, you agree to our <span>Privacy Policy</span>, and allow Promodo to use this information for marketing purposes.</p>
-        </form>
-      </div>
-    </section>
-     <section class="reviews" id="reviews">
-      <div class="container section">
-       <h2 class="section-tittle">Reviews</h2>
-       <ul class="reviews-list">
-        <li class="reviews-list-item">
-          <div class="reviews-card">
-            <img class="reviews-img" 
-            srcset="./img/review11x-min.png 1x, 
-            ./img/review12x-min.png 2x,"
-            src="./img/review11x-min.png" alt="Photo our student Abraham Baker">
-            <div class="reviews-card-text">
-              <h3 class="reviews-tittle">Abraham Baker</h3>
-              <p class="reviews-tittle-text">Student</p>
+      <section class="advertisement">
+        <h2 class="advertisement-tittle">
+          Master <span class="color-text">your photography</span> skills with
+          us!
+        </h2>
+        <h2 class="advertisement-tittle">
+          Master <span class="color-text">your photography</span> skills with
+          us!
+        </h2>
+      </section>
+      <section class="aboutus section" id="aboutus">
+        <div class="container">
+          <h2 class="section-tittle">
+            About <span class="color-text">US</span>
+          </h2>
+          <div class="aboutus-wrap">
+            <picture>
+              <source
+                srcset="
+                  ./img/desk-aboutus1x-min.png 1x,
+                  ./img/desk-aboutus2x-min.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/tab-aboutus1x-min.png 1x,
+                  ./img/tab-aboutus2x-min.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/mob-aboutus1x-min.png 1x,
+                  ./img/mob-aboutus2x-min.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img src="./img/mob-aboutus1x-min.png" alt="Photoaparat" />
+            </picture>
+            <div class="aboutus-text">
+              <p>
+                Our photography school is designed to teach you everything you
+                need to know about this magical art. Regardless of your
+                experience or skill level, we offer a wide range of courses to
+                suit your needs and interests. Our teaching team consists of
+                experienced photographers who have many years of experience in
+                this field. They strive not only to share their knowledge, but
+                also to inspire you to develop and express your unique
+                creativity.
+              </p>
+              <p>
+                Our courses cover a wide range of topics, from the basics of
+                photography and equipment use to professional image processing
+                and creating impressive compositions. You will have the
+                opportunity to learn the technical aspects of photography,
+                discover your own style and develop your own visual language.
+              </p>
             </div>
           </div>
-          <p class="reviews-text">I am very pleased that I decided to enroll in photography school. The teachers turned out to be very talented and experienced professionals who share their knowledge and are dedicated to their work. I was able to expand my skills and discover my own style.</p>
-        </li>
+        </div>
+      </section>
+      <section class="courses section" id="courses">
+        <div class="container">
+          <h2 class="courses-tittle section-tittle">
+            Our <span class="color-text">Courses</span>
+          </h2>
+          <p class="courses-text">
+            At our photography school, we offer a variety of courses that cover
+            all aspects of this fascinating art. Regardless of your experience
+            or skill level, we have courses to suit your needs and goals.
+          </p>
+          <ol class="courses-list">
+            <li class="courses-list-item">
+              <div class="courses-list-top">
+                <p class="courses-list-numb">01</p>
+                <a class="courses-list-link" href="#signup">
+                  <svg width="32" height="32">
+                    <use href="./img/icons.svg#icon-arrow-link" />
+                  </svg>
+                </a>
+              </div>
+              <h3 class="courses-list-tittle">Basics of photography</h3>
+              <p class="courses-list-text">
+                During this course, you will be able to familiarize yourself
+                with different types of cameras, learn the basics of
+                composition.
+              </p>
+            </li>
+            <li class="courses-list-item">
+              <div class="courses-list-top">
+                <p class="courses-list-numb">02</p>
+                <a class="courses-list-link" href="#signup">
+                  <svg width="32" height="32">
+                    <use href="./img/icons.svg#icon-arrow-link" />
+                  </svg>
+                </a>
+              </div>
+              <h3 class="courses-list-tittle">Landscape photography</h3>
+              <p class="courses-list-text">
+                In this course, you'll learn how to choose the right angles,
+                frame landscapes, and create depth and perspective in your
+                images.
+              </p>
+            </li>
+            <li class="courses-list-item">
+              <div class="courses-list-top">
+                <p class="courses-list-numb">03</p>
+                <a class="courses-list-link" href="#signup">
+                  <svg width="32" height="32">
+                    <use href="./img/icons.svg#icon-arrow-link" />
+                  </svg>
+                </a>
+              </div>
+              <h3 class="courses-list-tittle">Portrait photography</h3>
+              <p class="courses-list-text">
+                During this course, you will learn to choose the right lighting,
+                reproduce the mood and expressions on the faces of the models.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="mentors" id="mentors">
+        <div class="container section">
+          <h2 class="section-tittle">
+            Our <span class="color-text">Mentors</span>
+          </h2>
+          <ul class="mentors-list">
+            <li class="mentors-list-item">
+              <img
+                class="mentors-list-img"
+                srcset="
+                  ./img/mob-mentor11x-min.png 1x,
+                  ./img/mob-mentor12x-min.png 2x
+                "
+                src="./img/mob-mentor11x-min.png"
+                alt="Mentor Emilia Smith"
+              />
+              <h3 class="mentors-list-tittle">Emilia Smith</h3>
+              <p class="mentors-list-text">1.5 years of experience</p>
+            </li>
+            <li class="mentors-list-item">
+              <img
+                class="mentors-list-img"
+                srcset="
+                  ./img/mob-mentor21x-min.png 1x,
+                  ./img/mob-mentor22x-min.png 2x
+                "
+                src="./img/mob-mentor21x-min.png"
+                alt="Mentor Alex Lebedev"
+              />
+              <h3 class="mentors-list-tittle">Alex Lebedev</h3>
+              <p class="mentors-list-text">3.5 years of experience</p>
+            </li>
+            <li class="mentors-list-item">
+              <img
+                class="mentors-list-img"
+                srcset="
+                  ./img/mob-mentor31x-min.png 1x,
+                  ./img/mob-mentor32x-min.png 2x
+                "
+                src="./img/mob-mentor31x-min.png"
+                alt="Mentor Mia Dubrovska"
+              />
+              <h3 class="mentors-list-tittle">Mia Dubrovska</h3>
+              <p class="mentors-list-text">2.0 years of experience</p>
+            </li>
+            <li class="mentors-list-item">
+              <img
+                class="mentors-list-img"
+                srcset="
+                  ./img/mob-mentor41x-min.png 1x,
+                  ./img/mob-mentor42x-min.png 2x
+                "
+                src="./img/mob-mentor41x-min.png"
+                alt="Mentor Eliot Kovalev"
+              />
+              <h3 class="mentors-list-tittle">Eliot Kovalev</h3>
+              <p class="mentors-list-text">4.0 years of experience</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="signup" id="signup">
+        <div class="container section">
+          <h2 class="section-tittle">
+            Sign <span class="color-text">Up</span>
+          </h2>
+          <p class="singup-text">
+            Please use the form below to contact us. Enter your name, email, and
+            message and we'll get back to you shortly.
+          </p>
+          <form class="form">
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="input"
+                name="name"
+                placeholder="Enter your name"
+                pattern="[A-Za-z]{1,15}"
+                required
+              />
+              <span class="form__error"
+                >Use any letter case in Latin. Max length 15ch.</span
+              >
+            </div>
+            <div class="input-wrap">
+              <input
+                type="email"
+                class="input"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+              <span class="form__error"
+                >Enter your email (for example jsmith@example.com)</span
+              >
+            </div>
+            <textarea
+              class="textarea"
+              name="mesage"
+              placeholder="Message"
+            ></textarea>
+            <button class="form-btn" type="button">Send</button>
+            <p class="form-policy">
+              By clicking on “Send” button, you agree to our
+              <span>Privacy Policy</span>, and allow Promodo to use this
+              information for marketing purposes.
+            </p>
+          </form>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="container section">
+          <h2 class="section-tittle">Reviews</h2>
+          <ul class="reviews-list">
+            <li class="reviews-list-item">
+              <div class="reviews-card">
+                <img
+                  class="reviews-img"
+                  srcset="
+                    ./img/review11x-min.png 1x,
+                    ./img/review12x-min.png 2x
+                  "
+                  src="./img/review11x-min.png"
+                  alt="Photo our student Abraham Baker"
+                />
+                <div class="reviews-card-text">
+                  <h3 class="reviews-tittle">Abraham Baker</h3>
+                  <p class="reviews-tittle-text">Student</p>
+                </div>
+              </div>
+              <p class="reviews-text">
+                I am very pleased that I decided to enroll in photography
+                school. The teachers turned out to be very talented and
+                experienced professionals who share their knowledge and are
+                dedicated to their work. I was able to expand my skills and
+                discover my own style.
+              </p>
+            </li>
 
-         <li class="reviews-list-item">
-          <div class="reviews-card">
-            <img class="reviews-img" 
-            srcset="./img/review21x-min.png 1x, 
-            ./img/review22x-min.png 2x,"
-            src="./img/review21x-min.png" alt="Photo our student Abraham Baker">
-            <div class="reviews-card-text">
-              <h3 class="reviews-tittle">Abraham Baker</h3>
-              <p class="reviews-tittle-text">Student</p>
-            </div>
-          </div>
-          <p class="reviews-text">I am very pleased that I decided to enroll in photography school. The teachers turned out to be very talented and experienced professionals who share their knowledge and are dedicated to their work. I was able to expand my skills and discover my own style.</p>
-
-        </li>
-       
-       </ul>
-      </div>
-     </section>
+            <li class="reviews-list-item">
+              <div class="reviews-card">
+                <img
+                  class="reviews-img"
+                  srcset="
+                    ./img/review21x-min.png 1x,
+                    ./img/review22x-min.png 2x
+                  "
+                  src="./img/review21x-min.png"
+                  alt="Photo our student Abraham Baker"
+                />
+                <div class="reviews-card-text">
+                  <h3 class="reviews-tittle">Abraham Baker</h3>
+                  <p class="reviews-tittle-text">Student</p>
+                </div>
+              </div>
+              <p class="reviews-text">
+                I am very pleased that I decided to enroll in photography
+                school. The teachers turned out to be very talented and
+                experienced professionals who share their knowledge and are
+                dedicated to their work. I was able to expand my skills and
+                discover my own style.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer" id="footer">
       <div class="container section">
         <a class="logo-link" href="./index.html">
-            <svg class="logo" width="127" height="20">
-              <use href="./img/icons.svg#icon-logo"></use>
-            </svg>
-          </a>
-          <address class="address">
-          
-              <a class="address-list-link" href="tel:+380665438912"
-                >UK +38 066 543 8912</a><br />
-                Ukraine, Kyiv
-         
+          <svg class="logo" width="127" height="20">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <address class="address">
+          <a class="address-list-link" href="tel:+380665438912"
+            >UK +38 066 543 8912</a
+          ><br />
+          Ukraine, Kyiv
         </address>
         <div class="footer-wrap-contact">
           <div class="soc-menu">
             <ul class="soc-menu-list">
               <li class="soc-menu-item">
-                <a class="soc-menu-link"
-                href="https://www.instagram.com/goitclub/" 
-                target="_blank"
-                rel="no-referrer nooper"
+                <a
+                  class="soc-menu-link"
+                  href="https://www.instagram.com/goitclub/"
+                  target="_blank"
+                  rel="no-referrer nooper"
                 >
-                Instagram
-              </a></li>
+                  Instagram
+                </a>
+              </li>
               <li class="soc-menu-item">
-                <a class="soc-menu-link"
-                href="https://www.facebook.com/goITclub/ "
+                <a
+                  class="soc-menu-link"
+                  href="https://www.facebook.com/goITclub/ "
                   target="_blank"
-                rel="no-referrer nooper">
-                Facebook
-              </a>
-            </li class="soc-menu-item">
-              <li>
-                <a class="soc-menu-link"
-                href="https://www.youtube.com/c/GoIT"
+                  rel="no-referrer nooper"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li class="soc-menu-item">
+                <a
+                  class="soc-menu-link"
+                  href="https://www.youtube.com/c/GoIT"
                   target="_blank"
-                rel="no-referrer nooper">
-                Youtube
-              </a>
-            </li>
+                  rel="no-referrer nooper"
+                >
+                  Youtube
+                </a>
+              </li>
             </ul>
           </div>
-           <div class="footer-menu">
-              <nav class="footer-menu-nav">
-                    <ul class="footer-menu-list">
-                      <li class="footer-menu-list-item">
-                        <a class="footer-menu-list-link" href="#aboutus">About us</a>
-                      </li>
-                      <li class="footer-menu-list-item">
-                        <a class="footer-menu-list-link" href="#courses"
-                          >Our courses</a
-                        >
-                      </li>
-                      <li class="footer-menu-list-item">
-                        <a class="footer-menu-list-link" href="#mentors"
-                          >Our mentors</a
-                        >
-                      </li>
-                      <li class="footer-menu-list-item">
-                        <a class="footer-menu-list-link" href="#reviews">Reviews</a>
-                      </li>
-                      <li class="footer-menu-list-item">
-                        <a class="footer-menu-list-link" href="#footer">Contacts</a>
-                      </li>
-                    </ul>
-              </nav>
+          <div class="footer-menu">
+            <nav class="footer-menu-nav">
+              <ul class="footer-menu-list">
+                <li class="footer-menu-list-item">
+                  <a class="footer-menu-list-link" href="#aboutus">About us</a>
+                </li>
+                <li class="footer-menu-list-item">
+                  <a class="footer-menu-list-link" href="#courses"
+                    >Our courses</a
+                  >
+                </li>
+                <li class="footer-menu-list-item">
+                  <a class="footer-menu-list-link" href="#mentors"
+                    >Our mentors</a
+                  >
+                </li>
+                <li class="footer-menu-list-item">
+                  <a class="footer-menu-list-link" href="#reviews">Reviews</a>
+                </li>
+                <li class="footer-menu-list-item">
+                  <a class="footer-menu-list-link" href="#footer">Contacts</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-              <form class="footer-form">
-                  
-                    <span class="form__error">(example jsmith@example.com)</span>
-                    <input class="input" type="email" name="email"
-                    placeholder="Enter your email"
-                    required
-                    pattern="[^@\s]+@[^@\s]+\.[^@\s]+" />
-                    
-                  
-                  <button type="submit" class="btn-footer-close">Go</button>
-                  
-              </form>
-              <div class="footer-policy">
-        <p class="footer-policy-text">Privacy Policy<br> Public Offering Agreement</p>
-        <p class="footer-policy-text">2023 Focus Frame<br>© All rights reserved</p>
+        <form class="footer-form">
+          <span class="form__error">(example jsmith@example.com)</span>
+          <input
+            class="input"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+          />
 
+          <button type="submit" class="btn-footer-close">Go</button>
+        </form>
+        <div class="footer-policy">
+          <p class="footer-policy-text">
+            Privacy Policy<br />
+            Public Offering Agreement
+          </p>
+          <p class="footer-policy-text">
+            2023 Focus Frame<br />© All rights reserved
+          </p>
+        </div>
       </div>
-      </div>
-      
     </footer>
   </body>
 </html>
