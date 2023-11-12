@@ -316,7 +316,6 @@ button {
 }
 
 .hero-link {
-  margin-right: 4px;
   width: 89px;
   height: 36px;
   color: inherit;
@@ -325,10 +324,36 @@ button {
   align-items: center;
   gap: 4px;
 }
+.hero-link:hover,
+.hero-link:focus {
+  text-decoration: underline;
+  font-style: italic;
+  animation-name: heroLinkHover;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heroLinkHover {
+  0% {
+    transform: scale(0.85);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.85);
+  }
+}
 
 .hero-text-reviews {
   color: rgba(255, 255, 255, 0.5);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .hero-text-reviews span {
@@ -366,7 +391,7 @@ button {
 
 /* -----------------------------------Advertisement--------------------------------------------- */
 .advertisement {
-  min-width: 100%;
+  width: 100%;
   height: 72px;
   overflow: hidden;
   padding: 20px 0;
@@ -423,6 +448,7 @@ button {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  max-width: 600px;
 }
 
 /* ------------------------------------------------------------------------------------ */
@@ -859,9 +885,96 @@ input:invalid:not(:placeholder-shown) + .form__error {
   background-color: #1d1d1d;
   color: #bea69e;
 }
-/* ------------------------------------------------------------------------------------ */ /* -----------------------------------Aboutus--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Courses--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Mentors--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Singup--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* -----------------------------------Reviews--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /* ----------------------------------Footer--------------------------------------------- */ /* ------------------------------------------------------------------------------------ */ /*------------------------------------Media-------------------------------------------- */
-/* @media screen and(min-width: 320px) {
+
+/* ------------------------------------------------------------------------------------ */
+
+/* -----------------------------------Media--------------------------------------------- */
+
+@media screen and (min-width: 768px) {
   .container {
-    width: 335px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
-} */
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .section-tittle {
+    font-size: 48px;
+    line-height: 1.12;
+    margin-bottom: 50px;
+  }
+
+  .hero-container {
+    padding: 64px 32px 0;
+  }
+
+  .hero-tittle {
+    font-size: 60px;
+    width: 517px;
+  }
+  .hero-text {
+    width: 418px;
+  }
+
+  .hero-bottom-section {
+    flex-wrap: nowrap;
+    width: 390px;
+  }
+  .hero-bottom-section-right {
+    gap: 12px;
+    flex-direction: row;
+  }
+  .hero-students {
+    height: 54px;
+    width: 137px;
+  }
+  .photo-students1,
+  .photo-students2,
+  .photo-students3 {
+    height: 54px;
+    width: 54px;
+  }
+  .photo-students2 {
+    left: 40px;
+  }
+  .photo-students3 {
+    left: 83px;
+  }
+
+  .hero-link {
+    gap: 8px;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 56px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .hero-text-reviews {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    gap: 8px;
+  }
+
+  .hero-text-reviews::before {
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    position: absolute;
+    left: -62px;
+  }
+  .advertisement-tittle {
+    font-size: 40px;
+    line-height: 1.25;
+  }
+  .aboutus-text {
+    flex-wrap: nowrap;
+    width: calc((100% / 2) * 40);
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
