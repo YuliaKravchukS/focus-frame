@@ -467,6 +467,9 @@ button {
 
 .courses-list-link {
 }
+.courses-list-icon {
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* .courses-list-link svg {
   fill: none;
@@ -479,6 +482,8 @@ button {
   font-size: 28px;
   font-weight: 500;
   width: 248px;
+  transition: text-shadow 30ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-style 30ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .courses-list-text {
   color: rgba(255, 255, 255, 0.5);
@@ -486,16 +491,25 @@ button {
   position: absolute;
   bottom: 28px;
   width: 279px;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-align 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-shadow 10ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.courses-list-item:hover .courses-list-icon,
+.courses-list-item:focus .courses-list-icon {
+  transform: scale(1.5) rotate(-180deg);
 }
 
 .courses-list-item:hover .courses-list-tittle,
 .courses-list-item:focus .courses-list-tittle {
   font-style: italic;
+  text-shadow: 0 3px 3px #c4b59d;
 }
 .courses-list-item:hover .courses-list-text,
 .courses-list-item:focus .courses-list-text {
   transform: translateY(-100px) scale(1.17);
   text-align: center;
+  text-shadow: 0 0.5px 1px rgba(255, 255, 255, 0.5);
 }
 /* ------------------------------------------------------------------------------------ */
 
