@@ -33,7 +33,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1080px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -71,7 +71,10 @@ button {
   margin-bottom: 40px;
 }
 .background {
+  width: 100%;
+  max-width: 1280px;
   padding-top: 20px;
+  margin: 0 auto;
   padding-bottom: 80px;
   background-image: url(../img/fon1x-min.png);
   background-repeat: repeat;
@@ -247,14 +250,16 @@ button {
   background-image: url(../img/hero1x-min.png);
   background-repeat: no-repeat;
   background-position: bottom center;
-  min-height: 777px;
+  height: 777px;
 }
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-containe {
+  .hero-container {
     background-image: url(../img/hero2x-min.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
   }
 }
 .hero-tittle {
@@ -287,7 +292,7 @@ button {
   gap: 4px;
 
   flex-direction: column;
-  min-height: 84px;
+  height: 84px;
 }
 .hero-students {
   position: relative;
@@ -390,7 +395,7 @@ button {
 /* ------------------------------------------------------------------------------------ */
 
 /* -----------------------------------Advertisement--------------------------------------------- */
-.advertisement {
+.advertisement .container {
   width: 100%;
   height: 72px;
   overflow: hidden;
@@ -426,7 +431,7 @@ button {
 
 @keyframes advertisementTittle {
   from {
-    transform: translateX(-17%);
+    transform: translateX(-10%);
   }
 
   to {
@@ -443,6 +448,7 @@ button {
   flex-wrap: wrap;
   gap: 40px;
 }
+
 .aboutus-text {
   letter-spacing: -0.02em;
   display: flex;
@@ -770,8 +776,12 @@ input:invalid:not(:placeholder-shown) + .form__error {
 /* ------------------------------------------------------------------------------------ */
 
 /* -----------------------------------Footer--------------------------------------------- */
-
+.footer .section {
+  padding-bottom: 20px;
+}
 .footer {
+  max-width: 1280px;
+  margin: 0 auto;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   background-image: url(../img/fon1x-min.png);
   background-repeat: repeat;
@@ -1059,7 +1069,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
   }
   .reviews-list {
     width: 640px;
-    margin: auto;
+    margin: 0 auto 50px;
   }
   .reviews-tittle {
     line-height: 1.4;
@@ -1080,5 +1090,166 @@ input:invalid:not(:placeholder-shown) + .form__error {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: -0.02em;
+  }
+
+  .footer .section {
+    padding-bottom: 25px;
+  }
+  .footer-wrap {
+    display: flex;
+    gap: 58px;
+  }
+  .footer .logo-link {
+    margin-bottom: 25px;
+  }
+  .footer-wrap-contact {
+    gap: 25px;
+  }
+  .footer-form {
+    margin-bottom: 0;
+  }
+  .footer .input {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .hero-container {
+    padding: 80px 50px 50px;
+    background-position: bottom right 50px;
+    height: 600px;
+    background-size: 397px 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero-tittle {
+    font-size: 64px;
+    width: 553px;
+  }
+  .hero-bottom-section-right {
+    height: 56px;
+  }
+  .advertisement-tittle {
+    font-size: 59px;
+    line-height: 1.09;
+  }
+  .aboutus-wrap {
+    flex-wrap: nowrap;
+  }
+  .aboutus-text {
+    gap: 20px;
+  }
+  .aboutus-text p {
+    width: calc((100% - 20px) / 2);
+  }
+  .aboutus-wrap picture {
+    flex-shrink: 0;
+  }
+
+  .courses-list-item {
+    width: calc((100% - 40px) / 3);
+  }
+  .mentors-list {
+    row-gap: 100px;
+    column-gap: 93px;
+    max-width: 488px;
+    margin: 0 auto;
+  }
+  .mentors-list-item {
+    width: calc((100% - 100px) / 2);
+  }
+  .mentors-list-tittle {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+
+  .mentors-list-text {
+    font-size: 14px;
+  }
+
+  .signup-container {
+    width: 480px;
+  }
+  .signup .section-tittle {
+    margin-bottom: 20px;
+  }
+  .singup-text {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    width: 100%;
+  }
+  .input,
+  .textarea {
+    padding: 20px 18px;
+  }
+  .input {
+    margin-bottom: 14px;
+  }
+  .form-btn {
+    padding: 16px 18px;
+
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .form-policy {
+    font-size: 14px;
+    width: 380px;
+  }
+  .reviews-list {
+    width: 640px;
+    margin: 0 auto 50px;
+  }
+  .reviews-tittle {
+    line-height: 1.4;
+  }
+  .reviews-tittle-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .reviews-tittle-text::after {
+    background-size: 116px 20px;
+    top: -30px;
+    left: 418px;
+    width: 116px;
+    height: 20px;
+  }
+  .reviews-text {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+
+  .footer .section {
+    padding-bottom: 25px;
+  }
+  .footer-wrap {
+    display: flex;
+    gap: 58px;
+  }
+  .footer .logo-link {
+    margin-bottom: 25px;
+  }
+  .footer-wrap-contact {
+    gap: 25px;
+  }
+  .footer-form {
+    margin-bottom: 0;
+  }
+  .footer .input {
+    height: 60px;
   }
 }
