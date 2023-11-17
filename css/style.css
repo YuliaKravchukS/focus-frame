@@ -1057,4 +1057,28 @@ input:invalid:not(:placeholder-shown) + .form__error {
     font-size: 14px;
     width: 380px;
   }
+  .reviews-list {
+    width: 640px;
+    margin: auto;
+  }
+  .reviews-tittle {
+    line-height: 1.4;
+  }
+  .reviews-tittle-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .reviews-tittle-text::after {
+    background-size: 116px 20px;
+    top: -30px;
+    left: 418px;
+    width: 116px;
+    height: 20px;
+  }
+  .reviews-text {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
 }
