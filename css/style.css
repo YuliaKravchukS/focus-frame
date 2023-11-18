@@ -1187,7 +1187,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
   .reviews-list {
     overflow: visible;
-    margin: 0;
+    margin: 0 0 75px;
     gap: 20px;
   }
 
@@ -1206,11 +1206,9 @@ input:invalid:not(:placeholder-shown) + .form__error {
     display: flex;
     gap: 58px;
   }
-  .footer .logo-link {
-    margin-bottom: 25px;
-  }
+
   .footer-wrap-contact {
-    gap: 25px;
+    gap: 50px;
   }
   .footer-form {
     margin-bottom: 0;
