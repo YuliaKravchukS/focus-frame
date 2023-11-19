@@ -250,6 +250,7 @@ button {
   background-image: url(../img/hero1x-min.png);
   background-repeat: no-repeat;
   background-position: bottom center;
+  background-size: 256px 314px;
   height: 777px;
 }
 
@@ -950,6 +951,8 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
   .hero-container {
     padding: 64px 32px 0;
+    background-size: 393px 434px;
+    height: 900px;
   }
 
   .hero-tittle {
