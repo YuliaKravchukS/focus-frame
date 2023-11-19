@@ -725,6 +725,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
   display: flex;
   gap: 10px;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .reviews-card-text {
@@ -744,18 +745,18 @@ input:invalid:not(:placeholder-shown) + .form__error {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: -0.02em;
-  position: relative;
+  /* position: relative; */
 }
 
-.reviews-tittle-text::after {
+.reviews-card::after {
   content: "";
   position: absolute;
   background-image: url(../img/star1x-min.png);
   background-size: 96px 16px;
   /* background-position: -10px; */
   background-repeat: no-repeat;
-  top: 18px;
-  left: 0;
+  top: 60px;
+  left: 56px;
   width: 96px;
   height: 16px;
 }
@@ -1087,10 +1088,11 @@ input:invalid:not(:placeholder-shown) + .form__error {
     line-height: 1.29;
   }
 
-  .reviews-tittle-text::after {
+  .reviews-card::after {
     background-size: 116px 20px;
-    top: -30px;
-    left: 418px;
+    top: 0;
+    right: 0;
+    left: auto;
     width: 116px;
     height: 20px;
   }
@@ -1198,10 +1200,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
   .reviews-list-item {
     width: calc((100% - 20px) / 2);
-  }
-
-  .reviews-tittle-text::after {
-    left: 310px;
   }
 
   .footer .section {
