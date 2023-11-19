@@ -505,18 +505,27 @@ button {
 }
 
 .courses-list-link {
+  border-radius: 50%;
+  background-color: #1d1d1d;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .courses-list-icon {
+  fill: #ffffff66;
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .courses-list-link svg {
-  fill: none;
+.courses-list-link:hover .courses-list-icon,
+.courses-list-link:focus .courses-list-icon {
+  fill: #ffffff;
 }
 .courses-list-link:hover,
 .courses-list-link:focus {
-  fill: #bea69e;
-} */
+  background-color: #bea69e;
+}
 .courses-list-tittle {
   font-size: 28px;
   font-weight: 500;
