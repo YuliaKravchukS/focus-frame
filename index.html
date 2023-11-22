@@ -26,86 +26,51 @@
     <main>
       <div class="background">
         <header class="header container">
-          <div class="header-wrap">
-            <a class="logo-link" href="./index.html">
-              <svg class="logo" width="127" height="20">
-                <use href="./img/icons.svg#icon-logo"></use>
-              </svg>
-            </a>
-            <div class="group-btn-menu">
-              <a class="header-icon" href="#signup">
-                <img
-                  class="header-icon-photoaparat"
-                  src="./img/photoaparat1x-min.png"
-                  alt="photoaparat-icon"
-                  width="32"
-                  height="32"
-                />
+          <div class="header-tablet-btn">
+            <div class="header-wrap">
+              <a class="logo-link" href="./index.html">
+                <svg class="logo" width="127" height="20">
+                  <use href="./img/icons.svg#icon-logo"></use>
+                </svg>
               </a>
-              <div class="burger-menu">
-                <input
-                  class="burger-menu-cherbox"
-                  id="menu__toggle"
-                  type="checkbox"
-                />
-                <label class="burger-menu-btn" for="menu__toggle">
-                  <span class="burger-menu-icon"></span>
-                </label>
-                <!-- <div class="wrap-mob-menu"> -->
-                <div class="mob-menu">
-                  <button type="button" class="btn-mob-close">X</button>
-                  <nav class="mob-menu-nav">
-                    <ul class="mob-menu-list">
-                      <li class="mob-menu-list-item">
-                        <a class="mob-menu-list-link" href="#aboutus"
-                          >About us</a
-                        >
-                      </li>
-                      <li class="mob-menu-list-item">
-                        <a class="mob-menu-list-link" href="#courses"
-                          >Our courses</a
-                        >
-                      </li>
-                      <li class="mob-menu-list-item">
-                        <a class="mob-menu-list-link" href="#mentors"
-                          >Our mentors</a
-                        >
-                      </li>
-                      <li class="mob-menu-list-item">
-                        <a class="mob-menu-list-link" href="#reviews"
-                          >Reviews</a
-                        >
-                      </li>
-                      <li class="mob-menu-list-item">
-                        <a class="mob-menu-list-link" href="#footer"
-                          >Contacts</a
-                        >
-                      </li>
-                    </ul>
-                  </nav>
+              <div class="group-btn-menu">
+                <a class="header-icon" href="#signup">
+                  <svg class="header-icon-camera" width="16" height="16">
+                    <use href="./img/icons.svg#icon-camera"></use>
+                  </svg>
+                </a>
+                <div class="burger-menu">
+                  <input
+                    class="burger-menu-cherbox"
+                    id="menu__toggle"
+                    type="checkbox"
+                  />
+                  <label class="burger-menu-btn" for="menu__toggle">
+                    <span class="burger-menu-icon"></span>
+                  </label>
                 </div>
-                <!-- </div> -->
               </div>
+              <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-list-item">
+                    <a class="nav-list-link" href="#aboutus">About us</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a class="nav-list-link" href="#courses">Our courses</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a class="nav-list-link" href="#mentors">Our mentors</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a class="nav-list-link" href="#reviews">Reviews</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a class="nav-list-link" href="#footer">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
-            <nav class="nav">
-              <ul class="nav-list">
-                <li class="nav-list-item">
-                  <a class="nav-list-link" href="#aboutus">About us</a>
-                </li>
-                <li class="nav-list-item">
-                  <a class="nav-list-link" href="#courses">Our courses</a>
-                </li>
-                <li class="nav-list-item">
-                  <a class="nav-list-link" href="#mentors">Our mentors</a>
-                </li>
-                <li class="nav-list-item">
-                  <a class="nav-list-link" href="#reviews">Reviews</a>
-                </li>
-                <li class="nav-list-item">
-                  <a class="nav-list-link" href="#footer">Contacts</a>
-                </li>
-              </ul>
-            </nav>
+            <a class="header-icon-btn" href="#signup">Sign up</a>
           </div>
         </header>
 
@@ -576,5 +541,42 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop-mob-menu">
+      <div class="mob-menu is-close">
+        <button type="button" class="btn-mob-close">X</button>
+        <nav class="mob-menu-nav">
+          <ul class="mob-menu-list">
+            <li class="mob-menu-list-item">
+              <a class="mob-menu-list-link" href="#aboutus">About us</a>
+            </li>
+            <li class="mob-menu-list-item">
+              <a class="mob-menu-list-link" href="#courses">Our courses</a>
+            </li>
+            <li class="mob-menu-list-item">
+              <a class="mob-menu-list-link" href="#mentors">Our mentors</a>
+            </li>
+            <li class="mob-menu-list-item">
+              <a class="mob-menu-list-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="mob-menu-list-item">
+              <a class="mob-menu-list-link" href="#footer">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <picture>
+          <source
+            srcset="../img/tab-menu1x-min.jpg 1x, ../img/tab-menu2x-min.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="../img/mob-menu1x-min.jpg 1x, ../img/mob-menu2x-min.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="../img/mob-menu1x-min.jpg" alt="Camera" />
+        </picture>
+      </div>
+    </div>
+    x
   </body>
 </html>
