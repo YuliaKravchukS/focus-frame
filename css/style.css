@@ -185,21 +185,22 @@ button {
   align-items: center;
   margin-left: auto;
 }
-.backdrop-mob-menu::backdrop {
+.backdrop-mob-menu::before {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
-  width: (100%-218px);
+  width: 100vw;
   height: 100vh;
   opacity: 0.7;
   z-index: 100;
   background-color: rgba(18, 18, 18, 0.4);
+  visibility: hidden;
 }
 
 .mob-menu {
   width: 218px;
-  height: 100vh;
+  height: 100%;
   background-color: var(--brown, #bea69e);
   padding-top: 20px;
   position: fixed;
@@ -209,7 +210,9 @@ button {
   visibility: hidden;
   pointer-events: none;
   z-index: 150;
-  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .is-close {
@@ -222,20 +225,36 @@ button {
   border: none;
   width: 32px;
   height: 32px;
-
   margin-right: 20px;
-
   margin-left: auto;
   display: block;
-  margin-bottom: 128px;
 }
 
 .mob-menu-nav {
   padding: 20px;
 }
 
+.mob-picture {
+  background-image: url(../img/mob-menu1x-min.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 218px 218px;
+
+  height: 218px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .mob-picture {
+    background-image: url(../img/mob-menu2x-min.jpg);
+  }
+}
+
+/* .mob-menu-picture { height: 218px; } @media screen and (min-width: 767px) { .mob-menu-picture { height: 480px; } } */
+
 .mob-menu-list {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 .mob-menu-list-item:not(:last-child) {
   margin-bottom: 20px;
@@ -245,7 +264,10 @@ button {
   line-height: normal;
   text-transform: uppercase;
 }
-
+.mob-menu-list-link:hover,
+.mob-menu-list-link:focus {
+  font-weight: 700;
+}
 .header-icon-btn {
   display: none;
   border-radius: 12px;
@@ -972,6 +994,27 @@ input:invalid:not(:placeholder-shown) + .form__error {
     font-size: 48px;
     line-height: 1.12;
     margin-bottom: 50px;
+  }
+  .mob-menu {
+    width: 480px;
+  }
+
+  .mob-picture {
+    background-image: url(../img/tab-menu1x-min.jpg);
+    background-size: 480px 400px;
+    height: 480px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .mob-picture {
+      background-image: url(../img/tab-menu2x-min.jpg);
+    }
+  }
+
+  .mob-menu-list-item:not(:last-child) {
+    margin-bottom: 28px;
   }
 
   .logo-link {
