@@ -131,6 +131,7 @@ button {
 .burger-menu-cherbox {
   appearance: none;
 }
+
 .burger-menu-btn {
   position: fixed;
   top: -10px;
@@ -1217,7 +1218,10 @@ input:invalid:not(:placeholder-shown) + .form__error {
   }
   .footer-contact {
     display: flex;
-    justify-content: space-between;
+    gap: 58px;
+  }
+  .footer-logo-address {
+    width: 142px;
   }
 
   .footer .logo-link {
@@ -1231,6 +1235,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
   }
   .footer .input {
     height: 60px;
+    width: 178px;
   }
 }
 
@@ -1352,6 +1357,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
     gap: 0;
   }
   .footer-contact {
+    justify-content: space-between;
     gap: 137px;
     margin-left: auto;
   }
