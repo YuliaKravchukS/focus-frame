@@ -50,10 +50,66 @@
                     type="checkbox"
                   />
                   <label class="burger-menu-btn" for="menu__toggle">
-                    <span class="burger-menu-icon"></span>
+                    <span class="burger-menu-icon">
+                      <svg class="btn-mob-icon-nav" width="32" height="22">
+                        <use href="./img/icons.svg#icon-nav"></use>
+                      </svg>
+                    </span>
                   </label>
+                  <div class="backdrop-mob-menu">
+                    <div class="mob-menu">
+                      <button type="button" class="btn-mob-close">
+                        <svg class="btn-mob-icon-close" width="32" height="32">
+                          <use href="./img/icons.svg#icon-x"></use>
+                        </svg>
+                      </button>
+
+                      <nav class="mob-menu-nav">
+                        <ul class="mob-menu-list">
+                          <li class="mob-menu-list-item">
+                            <a class="mob-menu-list-link" href="#aboutus"
+                              >About us</a
+                            >
+                          </li>
+                          <li class="mob-menu-list-item">
+                            <a class="mob-menu-list-link" href="#courses"
+                              >Our courses</a
+                            >
+                          </li>
+                          <li class="mob-menu-list-item">
+                            <a class="mob-menu-list-link" href="#mentors"
+                              >Our mentors</a
+                            >
+                          </li>
+                          <li class="mob-menu-list-item">
+                            <a class="mob-menu-list-link" href="#reviews"
+                              >Reviews</a
+                            >
+                          </li>
+                          <li class="mob-menu-list-item">
+                            <a class="mob-menu-list-link" href="#footer"
+                              >Contacts</a
+                            >
+                          </li>
+                        </ul>
+                      </nav>
+                      <div class="mob-picture"></div>
+                      <!-- <picture class="mob-menu-picture">
+          <source
+            srcset="../img/tab-menu1x-min.jpg 1x, ../img/tab-menu2x-min.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="../img/mob-menu1x-min.jpg 1x, ../img/mob-menu2x-min.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="../img/mob-menu1x-min.jpg" alt="Camera" />
+        </picture> -->
+                    </div>
+                  </div>
                 </div>
               </div>
+
               <nav class="nav">
                 <ul class="nav-list">
                   <li class="nav-list-item">
@@ -545,42 +601,5 @@
         </div>
       </div>
     </footer>
-
-    <div class="backdrop-mob-menu">
-      <div class="mob-menu">
-        <button type="button" class="btn-mob-close">X</button>
-        <nav class="mob-menu-nav">
-          <ul class="mob-menu-list">
-            <li class="mob-menu-list-item">
-              <a class="mob-menu-list-link" href="#aboutus">About us</a>
-            </li>
-            <li class="mob-menu-list-item">
-              <a class="mob-menu-list-link" href="#courses">Our courses</a>
-            </li>
-            <li class="mob-menu-list-item">
-              <a class="mob-menu-list-link" href="#mentors">Our mentors</a>
-            </li>
-            <li class="mob-menu-list-item">
-              <a class="mob-menu-list-link" href="#reviews">Reviews</a>
-            </li>
-            <li class="mob-menu-list-item">
-              <a class="mob-menu-list-link" href="#footer">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="mob-picture"></div>
-        <!-- <picture class="mob-menu-picture">
-          <source
-            srcset="../img/tab-menu1x-min.jpg 1x, ../img/tab-menu2x-min.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="../img/mob-menu1x-min.jpg 1x, ../img/mob-menu2x-min.jpg 2x"
-            media="(max-width: 767px)"
-          />
-          <img src="../img/mob-menu1x-min.jpg" alt="Camera" />
-        </picture> -->
-      </div>
-    </div>
   </body>
 </html>

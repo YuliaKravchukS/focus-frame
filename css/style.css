@@ -132,45 +132,6 @@ button {
   appearance: none;
 }
 
-.burger-menu-btn {
-  position: fixed;
-  top: -10px;
-  right: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 32px;
-  height: 32px;
-  background-color: transparent;
-  border: none;
-  position: relative;
-  cursor: pointer;
-  z-index: 1;
-  transition: transform 1s cubic-bezier(0, 0, 1, 1) 500ms;
-}
-
-.burger-menu-icon,
-.burger-menu-icon::before,
-.burger-menu-icon::after {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 27px;
-  height: 2px;
-  background-color: #ffffff;
-  border-radius: 2px;
-  right: 0;
-}
-.burger-menu-icon {
-  width: 20px;
-}
-.burger-menu-icon::before {
-  top: -8px;
-}
-.burger-menu-icon::after {
-  top: 8px;
-}
-
 .header-wrap {
   height: 50px;
   display: flex;
@@ -182,11 +143,45 @@ button {
 }
 .group-btn-menu {
   display: flex;
-  gap: 26px;
+  gap: 14px;
   align-items: center;
+  justify-content: center;
   margin-left: auto;
 }
-.backdrop-mob-menu::before {
+
+.header-icon-btn {
+  display: none;
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 16px 58px;
+  color: #121212;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.56;
+  text-transform: uppercase;
+  transition: transform 1s cubic-bezier(0, 0, 1, 1) 500ms;
+}
+
+.header-icon-btn:hover,
+.header-icon-btn:focus {
+  color: #bea69e;
+  background-color: #1d1d1d;
+}
+
+.burger-menu {
+  width: 32px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+}
+/* .burger-menu-cherbox:checked ~ .backdrop-mob-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+} */
+
+/* ---------------------------------MobMenu-------------------------------------------- */
+.backdrop-mob-menu {
   content: "";
   position: fixed;
   top: 0;
@@ -197,6 +192,7 @@ button {
   z-index: 100;
   background-color: rgba(18, 18, 18, 0.4);
   visibility: hidden;
+  pointer-events: none;
 }
 
 .mob-menu {
@@ -207,16 +203,13 @@ button {
   position: fixed;
   top: 0;
   right: 0;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  z-index: 150;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.is-close {
+.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -228,7 +221,13 @@ button {
   height: 32px;
   margin-right: 20px;
   margin-left: auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.btn-mob-icon-close {
+  stroke: #121212;
 }
 
 .mob-menu-nav {
@@ -269,24 +268,7 @@ button {
 .mob-menu-list-link:focus {
   font-weight: 700;
 }
-.header-icon-btn {
-  display: none;
-  border-radius: 12px;
-  background-color: #ffffff;
-  padding: 16px 58px;
-  color: #121212;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.56;
-  text-transform: uppercase;
-  transition: transform 1s cubic-bezier(0, 0, 1, 1) 500ms;
-}
 
-.header-icon-btn:hover,
-.header-icon-btn:focus {
-  color: #bea69e;
-  background-color: #1d1d1d;
-}
 /* ------------------------------------------------------------------------------------ */
 
 /* -----------------------------------Hero--------------------------------------------- */
@@ -701,7 +683,7 @@ button {
 .form__error {
   color: rgb(210, 47, 47);
   text-align: left;
-  font-size: 12px;
+  font-size: 10px;
   display: block;
   display: none;
   padding-left: 14px;
@@ -716,7 +698,7 @@ input:invalid:not(:placeholder-shown) {
 input:invalid:not(:placeholder-shown) + .form__error {
   display: block;
   position: absolute;
-  bottom: 15px;
+  bottom: 10px;
 }
 .form-btn {
   display: flex;
@@ -1169,6 +1151,13 @@ input:invalid:not(:placeholder-shown) + .form__error {
   }
   .input {
     margin-bottom: 14px;
+  }
+  .form__error {
+    font-size: 12px;
+  }
+
+  input:invalid:not(:placeholder-shown) + .form__error {
+    bottom: 15px;
   }
   .form-btn {
     padding: 16px 18px;
