@@ -238,9 +238,9 @@ button {
   background-image: url(../img/mob-menu1x-min.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: 218px 218px;
-
-  height: 218px;
+  background-size: contain;
+  height: 329px;
+  width: 218px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -426,7 +426,7 @@ button {
 /* ------------------------------------------------------------------------------------ */
 
 /* -----------------------------------Advertisement--------------------------------------------- */
-.advertisement .container {
+.advertisement-border {
   width: 100%;
   height: 72px;
   overflow: hidden;
@@ -436,7 +436,9 @@ button {
   display: flex;
   margin-bottom: 40px;
 }
-
+.advertisement-tittle span {
+  color: #fff;
+}
 .advertisement-tittle {
   color: #bea69e;
   font-size: 28px;
@@ -444,12 +446,7 @@ button {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   /* height: 32px; */
-}
-.advertisement-tittle span {
-  color: #fff;
-}
 
-.advertisement-tittle {
   flex-shrink: 0;
   padding-right: 30px;
   min-width: 100%;
@@ -984,8 +981,8 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
   .mob-picture {
     background-image: url(../img/tab-menu1x-min.jpg);
-    background-size: 480px 400px;
     height: 480px;
+    width: 100%;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -1086,6 +1083,11 @@ input:invalid:not(:placeholder-shown) + .form__error {
     background-size: 50px 50px;
     position: absolute;
     left: -62px;
+  }
+
+  .advertisement-border {
+    height: 98px;
+    padding: 24px 0;
   }
   .advertisement-tittle {
     font-size: 40px;
@@ -1286,6 +1288,10 @@ input:invalid:not(:placeholder-shown) + .form__error {
   .hero-bottom-section-right {
     height: 56px;
   }
+  .advertisement-border {
+    height: 112px;
+  }
+
   .advertisement-tittle {
     font-size: 59px;
     line-height: 1.09;
