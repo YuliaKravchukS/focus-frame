@@ -8,11 +8,7 @@ const mobListMenu = document.querySelector('.mob-menu-list');
 const scrollTop = document.getElementById('scrollTop');
 
 menu.addEventListener('click', ()=> mobMenu.classList.add('is-open'));
-menu.addEventListener('mouseenter', ()=> menu.style.transform = 'scale(1.2)');
-menu.addEventListener('mouseleave', ()=> menu.style.transform = 'scale(1)');
 btnCloseMenu.addEventListener(('click'), ()=> mobMenu.classList.remove('is-open'));
-btnCloseMenu.addEventListener('mouseenter', ()=> btnCloseMenu.style.transform = 'scale(1.2)');
-btnCloseMenu.addEventListener('mouseleave', ()=> btnCloseMenu.style.transform = 'scale(1)');
 mobListMenu.addEventListener(('click'), ()=> mobMenu.classList.remove('is-open'));
 window.onscroll = () => {
     
