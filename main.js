@@ -3,9 +3,12 @@
 
 const mobMenu = document.querySelector('.backdrop-mob-menu');
 const btnCloseMenu = document.querySelector('.btn-mob-close');
-const menu = document.querySelector('.burger-menu-btn');
+const menu = document.querySelector('.burger-menu');
 const mobListMenu = document.querySelector('.mob-menu-list');
 const scrollTop = document.getElementById('scrollTop');
+console.log(mobMenu);
+console.log(btnCloseMenu);
+console.log(menu);
 
 menu.addEventListener('click', ()=> mobMenu.classList.add('is-open'));
 btnCloseMenu.addEventListener(('click'), ()=> mobMenu.classList.remove('is-open'));
