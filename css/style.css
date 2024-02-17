@@ -1286,6 +1286,9 @@ input:invalid:not(:placeholder-shown) + .form__error {
   .haeder-tablet-btn {
     gap: 20px;
   }
+  .burger-menu{
+    display: none;
+  }
   .nav-list {
     display: flex;
     gap: 28px;
