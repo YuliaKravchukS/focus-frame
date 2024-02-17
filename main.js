@@ -10,9 +10,18 @@ console.log(mobMenu);
 console.log(btnCloseMenu);
 console.log(menu);
 
-menu.addEventListener('click', ()=> mobMenu.classList.add('is-open'));
-btnCloseMenu.addEventListener(('click'), ()=> mobMenu.classList.remove('is-open'));
-mobListMenu.addEventListener(('click'), ()=> mobMenu.classList.remove('is-open'));
+menu.addEventListener('click', onMenuClick);
+btnCloseMenu.addEventListener(('click'), onBtnCloseMenuClick);
+mobListMenu.addEventListener(('click'), onBtnCloseMenuClick);
+
+function onMenuClick(){
+    mobMenu.classList.add('is-open');
+}
+
+function onBtnCloseMenuClick(){
+    mobMenu.classList.remove('is-open');
+}
+
 window.onscroll = () => {
     
     if (window.scrollY > 400) {
